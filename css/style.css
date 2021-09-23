@@ -1,3 +1,8 @@
+/* Author: Yevhenii Madzhar */
+/* Version: 1.0 */
+
+/* --------------------GENERAL STYLE-------------------- */
+
 body {
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,6 +31,15 @@ span {
     text-align: center;
     user-select: none;
 }
+
+.btn:hover,
+p:hover,
+span:hover {
+    color: rgb(180, 180, 255);
+    filter: drop-shadow(0px 0px 3px blue);
+}
+
+/* --------------------MAIN PART-------------------- */
 
 #console {
     width: 1200px;
@@ -56,11 +70,25 @@ span {
     align-self: center;
 }
 
+/* --------------------LEFT PART-------------------- */
+
 #left {
     width: 20%;
     height: 100%;
     position: relative;
 }
+
+.joybtn {
+    width: 65px;
+    height: 60px;
+}
+
+.btncir {
+    width: 55px;
+    height: 55px;
+}
+
+/* --------------------RIGHT PART-------------------- */
 
 #right {
     width: 20%;
@@ -71,6 +99,30 @@ span {
     width: 50px;
     height: 50px;
 }
+
+#eldown {
+    width: 100%;
+    background-color: cadetblue;
+    margin: 10px;
+}
+
+#btnsw {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    align-self: center;
+}
+
+.sw {
+    width: 80px;
+    height: 20px;
+    margin: 20px 5px 0px;
+    border-radius: 8px;
+    background-color: black;
+    box-shadow: 1px 1px 10px black;
+}
+
+/* --------------------DISPLAY PART-------------------- */
 
 #diszone {
     position: relative;
@@ -119,6 +171,8 @@ span {
     }
 }
 
+/* --------------------SPEAKER-------------------- */
+
 #speaker {
     position: absolute;
     bottom: 0%;
@@ -136,15 +190,7 @@ span {
     box-shadow: inset 0px 0px 10px black;
 }
 
-.joybtn {
-    width: 65px;
-    height: 60px;
-}
-
-.btncir {
-    width: 55px;
-    height: 55px;
-}
+/* --------------------JOYSTICK-------------------- */
 
 #joystick {
     width: 150px;
@@ -159,6 +205,8 @@ span {
     color: white;
     text-align: center;
 }
+
+/* --------------------JOYSTICK LEFT-------------------- */
 
 #jup {
     transform: rotate(90deg);
@@ -185,6 +233,8 @@ span {
     align-self: center;
 }
 
+/* --------------------JOYSTICK RIGHT-------------------- */
+
 #jupx {
     position: absolute;
     top: 5%;
@@ -207,34 +257,7 @@ span {
     align-self: center;
 }
 
-.btn:hover,
-p:hover,
-span:hover {
-    color: rgb(180, 180, 255);
-    filter: drop-shadow(0px 0px 3px blue);
-}
-
-#eldown {
-    width: 100%;
-    background-color: cadetblue;
-    margin: 10px;
-}
-
-#btnsw {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    align-self: center;
-}
-
-.sw {
-    width: 80px;
-    height: 20px;
-    margin: 20px 5px 0px;
-    border-radius: 8px;
-    background-color: black;
-    box-shadow: 1px 1px 10px black;
-}
+/* ----------STICKERS---------- */
 
 #sticker1 img,
 #sticker2 img {
